@@ -1,0 +1,109 @@
+% LaTeX Starter Template
+% Author: Debasish Dutta
+% Email: debasishdutta@ieee.org
+% Version: 1.0
+% Description: This template is designed to provide a starting point for writing a thesis or research paper.
+
+
+\documentclass[12pt,a4paper,oneside]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[english]{babel}
+\usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+% \usepackage{amsfonts}
+\usepackage{helvet}
+\usepackage[nottoc]{tocbibind}
+\usepackage{changepage}
+\pagestyle{plain}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \addbibresource{./resources/bib/references.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macros %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thesection}{\arabic{section}}
+
+\def\tbs{\textbackslash}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    %%%% Ttile Page %%%%%%%%%%%%%%
+    \begin{titlepage}
+        \begin{center}
+    
+            \vspace*{3cm}
+    
+            % \includegraphics[width=0.15\textwidth]{path_to_your_university_logo} \\
+            \vspace{2cm}
+    
+            % \textsc{\LARGE Your University Name} \\[1.5cm]
+    
+            % \textsc{\Large Department of Your Department Name} \\[0.5cm]
+    
+            \textsc{\large Synopsis} \\[0.5cm]
+            
+            % Title
+            \rule{\linewidth}{0.5mm} \\[0.4cm]
+            { \huge \bfseries Quick \LaTeX{} Starter  \\[0.4cm] }
+            \rule{\linewidth}{0.5mm} \\[1.5cm]
+            
+            \vspace*{2cm}
+            % Author
+            % \textbf{Submitted by} \\[0.5cm]
+            \textsc{\Large Your Name} \\[0.5cm]
+            % \textbf{Roll Number: Your Roll Number} \\[1.5cm]
+    
+            \vfill
+    
+            % Advisor
+            % \textbf{Under the guidance of} \\[0.5cm]
+            % \textsc{\Large Dr. Supervisor's Name} \\[1.5cm]
+    
+            \vfill
+    
+            % Bottom of the page
+            \textbf{\today}
+    
+        \end{center}
+    \end{titlepage}
+    
+    %%%% Ttile Page %%%%%%%%%%%%%%
+    
+    %%%% FRONTMATTER %%%%%%%%%%%%%
+    \setcounter{page}{0}
+    \tableofcontents
+    \thispagestyle{empty}
+    \pagebreak
+    %%%% FRONTMATTER %%%%%%%%%%%%%
+    
+    %%%% SECTIONS %%%%%%%%%%%%%%%%
+    
+\section{Introduction}
+
+
+
+
+
+
+
+    %%%% SECTIONS %%%%%%%%%%%%%%%%
+
+\end{document}
