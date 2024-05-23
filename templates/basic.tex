@@ -1,0 +1,40 @@
+\documentclass[12pt, a4paper]{article}
+
+% Packages
+\usepackage[english]{babel}
+\usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
+\usepackage[utf8]{inputenc} % UTF-8 encoding
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{graphicx}
+\usepackage{lipsum} % Lorem Ipsum placeholder text
+\usepackage{helvet}
+\usepackage[style=mla]{biblatex} % MLA style with biblatex
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% Bibliography Setup
+\addbibresource{references/ref.bib} % Specify your .bib file
+
+% Title and Author
+\title{My \LaTeX{} Document}
+\author{Your Name}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a basic LaTeX document.\cite{jones2015} Here is some text for demonstration purposes. \lipsum[1]
+
+\section{Methods}
+We used LaTeX to create this document\cite{brown2018}. \lipsum[2]
+
+\section{Results}
+The results are inconclusive. \lipsum[3]
+
+\section{Conclusion}
+In conclusion, LaTeX is a powerful typesetting system.\cite{doe2020} \lipsum[4]
+
+\printbibliography[title={References}] % Print bibliography with title "References"
+
+\end{document}
