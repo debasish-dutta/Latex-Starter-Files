@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{subcaption}
+\usepackage{amsmath, amssymb}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage{float}  % Improves figure and table placement
+\usepackage{cleveref} % Better cross-referencing
+\usepackage[table]{xcolor} % Table enhancements
+\usepackage{booktabs} % For cleaner tables
+\usepackage{appendix} % For appendices
+\usepackage{lipsum} % Placeholder text
+
+\linenumbers
+
+%%%%%% Bibliography %%%%%%
+\usepackage[style=ieee,
+citestyle=numeric-comp,
+sorting=none,
+backend=biber]{biblatex}  % Explicitly specify biber backend
+\addbibresource{Main content/references.bib}  % Use "references.bib" for clarity
+
+%%%%%% Title %%%%%%
+\title{Manuscript \LaTeX\ Template}
+
+%%%%%% Authors %%%%%%
+% Use an asterisk (*) to identify the corresponding author, and be sure to include that person’s e-mail address. Use symbols (in this order: †, ‡, §, ||, ¶, #, ††, ‡‡, etc.) for author notes, such as present addresses, “These authors contributed equally to this work” notations, and similar information.
+\author[1*$\dag$]{Author One}
+\author[2$\dag$]{Author Two}
+\author[2]{Author Three}
+\author[1,2]{Author Four}
+
+%%%%%% Affiliations %%%%%%
+\affil[1]{Department of Computer Science, A University, City, Country.}
+\affil[2]{Department of Astronomy, B University, City, Country.}
+\affil[*]{Address correspondence to: email@email.com}
+\affil[$\dag$]{These authors contributed equally to this work.}
+
+%%%%%% Date %%%%%%
+% Date is optional
+\date{}
+
+%%%%%% Spacing %%%%%%
+% Use paragraph spacing of 1.5 or 2 (for double spacing, use command \doublespacing)
+% \onehalfspacing
+
+\begin{document}
+
+\maketitle
+
+%%%%%% Abstract %%%%%%
+\begin{abstract}
+The abstract should be a single paragraph written in plain language that a general reader can understand. Do not include citations, figures, tables, or undefined abbreviations in the abstract. The length should be 200 words and not exceed 250 words, to include:
+\end{abstract}
+
+%%%%%% Main Text %%%%%%
+
+\section{INTRODUCTION}
+% \input{introduction.tex}
+The manuscript should start with a brief introduction that lays out the problem addressed by the research and describes the paper’s importance. The scientific question being investigated should be described in detail. The introduction should provide sufficient background information to make the article understandable to readers in other disciplines and provide enough context to ensure that the implications of the experimental findings are clear.
+
+Citations of references in the text should be identified using numbers in square brackets e.g., ``as discussed by Cui \cite{Mannam2021}'' or ``as discussed elsewhere \cite{Mannam2021, albq}.'' All references should be cited within the text and uncited references will be removed.
+
+As an example, this template includes a ``sample.bib'' file containing the references in BibTeX.
+
+
+%% MAIN TEXT INPUTS %%
+\input{Main content/methods.tex}
+\input{Main content/results.tex}
+\input{Main content/discussions.tex}
+
+
+
+%% ----- CONC ------%%
+\section{CONCLUSION }
+Include a Discussion that summarizes (but does not merely repeat) your conclusions and elaborates on their implications. There should be a paragraph outlining the limitations of your results and interpretation, as well as a discussion of the steps that need to be taken for the findings to be applied. Please avoid claims of priority.
+
+\section*{Acknowledgments}
+Anyone who made a contribution to the research or manuscript, but who is not a listed author, should be acknowledged (with their permission). Note that Research Articles require author contributions, funding, and competing interest statements. Types of acknowledgements include:
+
+\subsection*{Author Contributions}
+Describe contributions of each author to the paper, using the first initial and full last name.
+
+\medskip Examples:
+
+``S. Zhang conceived the idea and designed the experiments.''
+
+``E. F. Mustermann and J. F. Smith conducted the experiments.''
+
+``All authors contributed equally to the writing of the manuscript.''
+
+\subsection*{Funding}
+Name financially supporting bodies (written out in full), followed by the funding awardee and associated grant numbers (if applicable) in square brackets.
+
+\medskip Example:
+
+``This work was supported by the Engineering and Physical Sciences Research Council [grant numbers xxxx, yyyy]; the National Science Foundation [grant number zzzz]; and a Leverhulme Trust Research Project Grant.''
+
+\subsection*{Data Availability}
+A data availability statement is compulsory for all research articles. This statement describes whether and how others can access the data supporting the findings of the paper, including 1) what the nature of the data is, 2) where the data can be accessed, and 3) any restrictions on data access and why.
+
+\printbibliography
+
+\begin{appendices}
+
+\end{appendices}
+Supplementary Materials may include additional author notes—for example, a list of group authors.
+\end{document}
